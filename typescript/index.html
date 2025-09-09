@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Learn TypeScript</title>
+    <link rel="stylesheet" href="../css/style.css">
+</head>
+<body>
+    <header>
+        <h1>Learn TypeScript</h1>
+    </header>
+    <main>
+        <h2>Introduction to TypeScript</h2>
+        <p>TypeScript is a programming language developed and maintained by Microsoft. It is a strict syntactical superset of JavaScript and adds optional static typing to the language.</p>
+        <p><a href="../index.html">Back to Home</a></p>
+        <h3>Basic TypeScript Syntax</h3>
+        <pre><code>
+function greeter(person: string) {
+    return "Hello, " + person;
+}
+
+let user = "User";
+
+document.body.textContent = greeter(user);
+        </code></pre>
+        <h3>TypeScript Concepts</h3>
+        <ul>
+            <li><strong>Types:</strong> TypeScript adds types to JavaScript, like <code>string</code>, <code>number</code>, <code>boolean</code>, etc.</li>
+            <li><strong>Interfaces:</strong> A way to define contracts for what an object should look like.</li>
+            <li><strong>Classes:</strong> TypeScript supports object-oriented programming with classes.</li>
+            <li><strong>Compilation:</strong> TypeScript code needs to be compiled into JavaScript to run in a browser.</li>
+        </ul>
+        <h3>Compiling TypeScript</h3>
+        <p>To run TypeScript code in a browser, you need to compile it to JavaScript. First, you need to have Node.js and npm (Node Package Manager) installed. Then, you can install TypeScript globally using npm:</p>
+        <pre><code>npm install -g typescript</code></pre>
+        <p>Save your TypeScript code in a file with a <code>.ts</code> extension, for example <code>greeter.ts</code>. Then, compile it to JavaScript using the command:</p>
+        <pre><code>tsc greeter.ts</code></pre>
+        <p>This will create a <code>greeter.js</code> file, which you can then include in your HTML file.</p>
+    </main>
+</body>
+</html>

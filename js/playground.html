@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Code Playground</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body class="playground-body">
+    <header>
+        <h1>Code Playground</h1>
+        <p><a href="index.html">Back to Home</a></p>
+    </header>
+    <main id="playground-container">
+        <div id="editor-container">
+            <div class="editor">
+                <h2>HTML</h2>
+                <textarea id="html-code" placeholder="<!-- Type HTML here -->"></textarea>
+            </div>
+            <div class="editor">
+                <h2>CSS</h2>
+                <textarea id="css-code" placeholder="/* Type CSS here */"></textarea>
+            </div>
+            <div class="editor">
+                <h2>JavaScript</h2>
+                <textarea id="js-code" placeholder="// Type JavaScript here"></textarea>
+            </div>
+        </div>
+        <div id="result-container">
+            <h2>Result</h2>
+            <iframe id="result-frame"></iframe>
+        </div>
+    </main>
+    <script src="js/playground.js"></script>
+</body>
+</html>
