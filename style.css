@@ -1,5 +1,5 @@
 body {
-    font-family: sans-serif;
+    font-family: blackadder-itc;
     margin: 0;
     background-color: #f4f4f4;
 }
@@ -35,7 +35,8 @@ nav ul li a:hover {
 
 main {
     padding: 2rem;
-}
+}\
+
 
 footer {
     background-color: #333;
